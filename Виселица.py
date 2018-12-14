@@ -48,6 +48,8 @@ class MyWidget(QMainWindow):
         self.btnagain.clicked.connect(self.run)
         self.run()
 
+    # Ъ
+
     def runbtn1(self):
 
         if self.wr < 8:
@@ -64,6 +66,8 @@ class MyWidget(QMainWindow):
             self.wrons()
         self.quit()
 
+    # Ь
+
     def runbtn2(self):
 
         if self.wr < 8:
@@ -79,6 +83,8 @@ class MyWidget(QMainWindow):
             self.wr += 1
             self.wrons()
         self.quit()
+
+    # буквы
 
     def runbtna(self):
 
@@ -576,6 +582,8 @@ class MyWidget(QMainWindow):
             self.wrons()
         self.quit()
 
+    # старт
+
     def run(self):
 
         self.wr = 0
@@ -626,6 +634,8 @@ class MyWidget(QMainWindow):
         self.label.setText('*' * len(self.word))
         self.show()
 
+    # неправильный ответ
+
     def wrons(self):
 
         hbox = QHBoxLayout(self)
@@ -645,6 +655,8 @@ class MyWidget(QMainWindow):
             else:
                 sys.exit(app.exec_())
 
+    # закртытие окна
+
     def closeEvent(self, event):
 
         answer = QMessageBox.question(self, 'ВЫХОД',
@@ -655,6 +667,8 @@ class MyWidget(QMainWindow):
             event.ignore()
         else:
             event.accept()
+
+    # победа
 
     def quit(self):
 
